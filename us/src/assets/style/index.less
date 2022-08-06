@@ -1,0 +1,226 @@
+//部分全局使用样式
+
+//部分页面布局（左右分布）
+.com-tab-wrapper{
+    width: 100%;
+    height: 100%;
+    
+    .ivu-tabs{
+        width: 100%;
+        height: calc(100% - 0.8rem);
+    }
+    .ivu-tabs .ivu-tabs-content-animated{
+       
+        width: 100%;
+        height: 100%;
+        padding: 0.1rem 0;
+        box-sizing: border-box;
+        .ivu-tabs-tabpane{
+            width: 100%;
+            height: 100%;
+            
+        }
+    }
+}
+.com-status-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0.1rem 0.2rem;
+    background: #FAFAFA;
+    .vision-box{
+       flex: 1;
+       //这里设置一个width:0的原因是flex布局会导致部分的iview组件出现无限宽度的问题，例如表格、轮播图
+       width: 0;
+    }
+    .right-box{
+        height: 100%;
+        margin-left: 0.1rem;
+        width: 4rem;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+    }
+}
+//任务状态栏
+.com-task-signal-box{
+    padding: 0.3rem;
+    margin-bottom: 0.1rem;
+}
+
+//标题样式
+.com-title{
+    font-size: 0.16rem;
+    color: #1A1A1A;
+    margin-bottom: 0.1rem;
+    text-align: left;
+    i{
+        font-size: 24px;
+        margin-right: 0.1rem;
+        vertical-align: middle;
+    }
+}
+
+//输入框样式
+.com-input-box{
+    width: 240px;
+    border: 1px solid #c4c7ce;
+    border-radius: 4px;
+}
+
+//按钮样式
+.com-btn{
+    min-width: 1.5rem;
+    height: 0.36rem;
+    min-height: 32px;
+    line-height: 1.5;
+    padding: 0 0.28rem;
+    background: linear-gradient(180deg, #79A0EC, #5F8EE9, #2C6AE1);
+    box-shadow: 0rem 0.02rem 0.04rem 0rem rgba(36, 73, 144, 0.27);
+    border-radius: 0.22rem;
+    color: #fff;
+    font-size: 0.14rem;
+    &:hover{
+        color: #fff;
+        background: linear-gradient(180deg, #487EE5, #4070CD, #0945BA);
+    }
+}
+
+//蓝色按钮
+.com-blue-btn{
+    background: linear-gradient(180deg, #79A0EC, #5F8EE9, #2C6AE1);
+    box-shadow: 0rem 0.02rem 0.04rem 0rem rgba(36, 73, 144, 0.27);
+    &:hover{
+        color: #fff;
+        background: linear-gradient(180deg, #487EE5, #4070CD, #0945BA);
+    }
+}
+//黄色按钮
+.com-yellow-btn{
+    background: linear-gradient(180deg, rgb(238, 166, 58), rgb(235, 148, 17), #f90);
+    box-shadow: 0rem 0.02rem 0.04rem 0rem rgba(237, 144, 5, 0.27);
+    &:hover{
+        color: #fff;
+        background: linear-gradient(180deg, rgb(238, 166, 58), rgb(235, 148, 17), rgb(213, 129, 3));
+    }
+}
+//切换按钮样式
+.com-change-icon{
+    display: inline-block;
+    background: linear-gradient(180deg, #79A0EC, #5F8EE9, #2C6AE1);
+    box-shadow: 0rem 0.02rem 0.04rem 0rem rgba(36, 73, 144, 0.27);
+    margin-left: 10px;
+    color: #fff;
+    vertical-align: middle;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    padding:  0 8px;
+    &:hover{
+        color: #fff;
+        background: linear-gradient(180deg, #487EE5, #4070CD, #0945BA);
+    }
+}
+
+
+
+//鼠标悬浮
+.com-hover{
+    &:hover{
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+
+//常用flex布局
+.com-flex{
+    display: flex;
+}
+.com-flex-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.com-flex-space-around{
+    display: flex;
+    justify-content: space-around;
+}
+.com-flex-space-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//i元素用于图标设置大小
+.com-i-icon{
+    font-size: 0.18rem;
+    font-weight: bold;
+}
+.com-icon-btn{
+    font-weight: bold;
+}
+
+
+//用于图片的弹窗
+.com-img-modal-box{
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 0.01rem 0.01rem #949494;
+    min-height: 2rem;
+    img{
+        max-width: 100%;
+    }
+}
+
+//用于设置单选框选项
+.com-up-radio-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .ivu-radio-group-vertical .ivu-radio-wrapper{
+        height: auto;
+    }
+    .item{
+        background: #e7e7e7;
+        border-radius: 20px;
+        padding: 5px 35px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        .ivu-radio-inner{
+            margin-right: 20px;
+            border: 1px solid #1a1a1a;
+        }
+        i{
+            font-size: 16px;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+        strong{
+            color: #0945BA;
+        }
+    }
+}
+
+//图片盒子
+.com-img-box{
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+/* 表格滚动槽条*/
+::-webkit-scrollbar-track {
+    border-radius:22px;
+}
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: linear-gradient(179deg,#ffffff 0%, #ebecef 50%, #dadada 100%);
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0px rgba(46,46,46,0.65); 
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #D1D1D1;
+}
